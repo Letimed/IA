@@ -6,17 +6,16 @@ class Salle:
     def __init__(self, id):
         self.id = id
         self.ombre = False
-        self.passage = False
-        self.listpersonnage = []
+        self.listcharacter = []
 
-    def addPersonnageToSalle(self, personnage):
-        self.listpersonnage.append(personnage)
+    def addCharacterToSalle(self, character):
+        self.listcharacter.append(character)
 
-    def printlist(self):
-        print(self.listpersonnage)
+    def printList(self):
+        print(self.listcharacter)
 
-    def removePersonnageFromSalle(self, personnage):
-        self.listpersonnage.remove(personnage);
+    def removeCharacterFromSalle(self, character):
+        self.listcharacter.remove(character);
 
 class GameState:
     def __init__(self, salle1, salle2, salle3, salle4, salle5, salle6, salle7, salle8,salle9,salle10):
@@ -31,6 +30,11 @@ class GameState:
         self.Game.append(salle8)
         self.Game.append(salle9)
         self.Game.append(salle10)
+
+    def getSalleFromId(self, id):
+        for salle in self.Game:
+            if salle.id == id:
+                return salle
 
 
 Personnage1 = Personnage("rose")
