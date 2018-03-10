@@ -63,8 +63,9 @@ passages = [{1,4},{0,2},{1,3},{2,7},{0,5,8},{4,6},{5,7},{3,6,9},{4,9},{7,8}]
 pass_ext = [{1,4},{0,2,5,7},{1,3,6},{2,7},{0,5,8,9},{4,6,1,8},{5,7,2,9},{3,6,9,1},{4,9,5},{7,8,4,6}]
 
 gameState = GameState(salle1, salle2, salle3, salle4, salle5, salle6, salle7, salle8, salle9, salle10)
-salle1.addPersonnageToSalle(Personnage1);
-print(gameState.Game[0].listpersonnage[0].color)
-salle1.removePersonnageFromSalle(Personnage1);
-print(gameState.Game[0].printlist())
-test();
+
+salle1.addCharacterToSalle(Personnage1);
+print(gameState.Game[0].listcharacter[0].color)
+salle1.removeCharacterFromSalle(Personnage1);
+print(gameState.Game[0].printList())
+parser.test();
