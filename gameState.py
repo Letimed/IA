@@ -1,3 +1,5 @@
+from parser import *
+
 class Personnage:
     def __init__(self, color):
         self.color = color
@@ -65,3 +67,4 @@ salle1.addPersonnageToSalle(Personnage1);
 print(gameState.Game[0].listpersonnage[0].color)
 salle1.removePersonnageFromSalle(Personnage1);
 print(gameState.Game[0].printlist())
+test();
