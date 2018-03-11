@@ -1,4 +1,3 @@
-
 class Character:
     def __init__(self, color):
         self.color = color
@@ -154,15 +153,15 @@ while not done:
     questionFile = open(path_to_question,'r')
     question = questionFile.read()
     #parseQuestion()
-    questionFile.close();
+    questionFile.close()
     if question != old_question:
         reponseFile = open(path_to_reponse,'w')
         #playTurn()
         reponseFile.close()
         old_question = question
-    infoFile = open(path_to_info,'r');
+    infoFile = open(path_to_info,'r')
     lines = infoFile.readlines()
-    print(lines);
+    print(lines)
     #parseInfoLines()
     infoFile.close()
     if len(lines) > 0:
