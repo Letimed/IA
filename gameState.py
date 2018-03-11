@@ -5,9 +5,6 @@ class Character:
         self.color = color
         self.suspect = False
 
-    def suspectTrue(self):
-        self.suspect = True
-
 
 class Room:
     def __init__(self, id):
